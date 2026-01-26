@@ -1,17 +1,19 @@
 # Stock_Issue_Scanner
 KOSPI/KOSDAQ stock scanner that classifies theme-based stocks using issue(news) and volume flow signals
-'''text
+
+
+''' text
 issue-flow-scanner/
 ├─ README.md
 ├─ .env.example
-├─ docker-compose.yml                 # (선택) MySQL + backend
+├─ docker-compose.yml                 # MySQL + backend
 ├─ docs/
 │  ├─ erd.png
 │  ├─ api.md
 │  └─ rules.md                        # 뉴스 유효 이슈 규칙/키워드
 ├─ data/
 │  └─ seed/
-│     ├─ theme_universe.csv           # 테마-종목 맵 (필수)
+│     ├─ theme_universe.csv           # 테마-종목 맵 
 │     └─ issue_rules.yaml             # 유효 이슈 분류 규칙 (정책/실적/기술/규제/산업)
 │
 ├─ backend/
