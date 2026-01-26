@@ -1,5 +1,5 @@
 # Stock_Issue_Scanner
-
+#### 2026.02.07 ~ 
 
 ```text
 issue-flow-scanner/
