@@ -1,6 +1,6 @@
 # Stock_Issue_Scanner
 KOSPI/KOSDAQ stock scanner that classifies theme-based stocks using issue(news) and volume flow signals
-
+'''
 issue-flow-scanner/
 ├─ README.md
 ├─ .env.example
@@ -101,3 +101,5 @@ issue-flow-scanner/
    ├─ test_volume_filter.py
    ├─ test_issue_classifier.py
    └─ test_scanner.py
+
+   '''
