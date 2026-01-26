@@ -1,19 +1,16 @@
 # Stock_Issue_Scanner
 KOSPI/KOSDAQ stock scanner that classifies theme-based stocks using issue(news) and volume flow signals
-
-
-''' text
 issue-flow-scanner/
 ├─ README.md
 ├─ .env.example
-├─ docker-compose.yml                 # MySQL + backend
+├─ docker-compose.yml                 # (선택) MySQL + backend
 ├─ docs/
 │  ├─ erd.png
 │  ├─ api.md
 │  └─ rules.md                        # 뉴스 유효 이슈 규칙/키워드
 ├─ data/
 │  └─ seed/
-│     ├─ theme_universe.csv           # 테마-종목 맵 
+│     ├─ theme_universe.csv           # 테마-종목 맵 (필수)
 │     └─ issue_rules.yaml             # 유효 이슈 분류 규칙 (정책/실적/기술/규제/산업)
 │
 ├─ backend/
@@ -57,7 +54,7 @@ issue-flow-scanner/
 │  │  ├─ dedup.py                     # 뉴스 중복 제거 (hash)
 │  │  ├─ classifier.py                # 유효 이슈 판별 (규칙 기반)
 │  │  ├─ stock_linker.py              # 뉴스 → 종목 매칭
-│  │  └─ summarizer.py                # 뉴스 1줄 요약 (룰/옵션 LLM)
+│  │  └─ summarizer.py                # 뉴스 1줄 요약 (룰 / 옵션 LLM)
 │  │
 │  ├─ scanner/
 │  │  ├─ run_scan.py                  # 핵심 엔진: date → 스캔 결과 생성
@@ -95,7 +92,7 @@ issue-flow-scanner/
 │     │  ├─ api_client.dart
 │     │  └─ scan_service.dart         # /scan API 호출
 │     ├─ state/
-│     │  └─ scan_provider.dart        # 상태 관리 (Riverpod/Provider)
+│     │  └─ scan_provider.dart        # 상태 관리 (Riverpod / Provider)
 │     └─ utils/
 │        └─ format.dart
 │
@@ -103,5 +100,3 @@ issue-flow-scanner/
    ├─ test_volume_filter.py
    ├─ test_issue_classifier.py
    └─ test_scanner.py
-
-   '''
