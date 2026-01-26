@@ -12,7 +12,7 @@ issue-flow-scanner/
 │  └─ rules.md                        # 뉴스 유효 이슈 규칙/키워드
 ├─ data/
 │  └─ seed/
-│     ├─ theme_universe.csv           # 테마-종목 맵 (필수)
+│     ├─ theme_universe.csv           # 테마-종목 맵
 │     └─ issue_rules.yaml             # 유효 이슈 분류 규칙 (정책/실적/기술/규제/산업)
 │
 ├─ backend/
