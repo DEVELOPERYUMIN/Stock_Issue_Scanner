@@ -6,7 +6,7 @@
 issue-flow-scanner/
 ├─ README.md
 ├─ .env.example
-├─ docker-compose.yml                 # (선택) MySQL + backend
+├─ docker-compose.yml                 # MySQL + backend
 ├─ docs/
 │  ├─ erd.png
 │  ├─ api.md
@@ -68,7 +68,7 @@ issue-flow-scanner/
 │  │
 │  └─ utils/
 │     ├─ trading_calendar.py          # 거래일/휴장일 처리
-│     ├─ formatters.py                # 거래대금(50억 등) 포맷
+│     ├─ formatters.py                # 거래대금 포맷
 │     └─ dates.py
 │
 ├─ frontend/                          # Flutter Web
