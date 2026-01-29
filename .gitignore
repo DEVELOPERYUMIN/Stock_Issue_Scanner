@@ -1,0 +1,8 @@
+news_stock/
+.env
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+.idea/
+sis_mysql_data/
