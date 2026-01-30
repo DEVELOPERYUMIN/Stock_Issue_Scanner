@@ -1,3 +1,13 @@
+## 어떤 모델들을 기준으로 migration 만들지 정함 
+'''  
+표준 흐름 : 모델 작성 → 마이그레이션 생성 → DB 반영
+
+ORM(SQLAlchemy) : 파이썬 클래스 <-> DB테이블을 연결하는 도구 
+테이블을 sql 로 만드는대신 파이썬으로 코드를 만들 수 있음 
+
+migration 마이그레이션 : db 구조 변경 이력을 코드로 관리하는 시스템 
+                      적용 : upgrade / 되돌리기 : downgrade 
+'''
 from logging.config import fileConfig
 from alembic import context
 from sqlalchemy import engine_from_config, pool
