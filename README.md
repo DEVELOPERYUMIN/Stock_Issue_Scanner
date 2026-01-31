@@ -1,5 +1,5 @@
 # Stock_Issue_Scanner
-#### 2026.02.07 ~ 
+> 2026.02~ | 개인 프로젝트 – 뉴스 및 거래량 데이터를 활용한 KOSPI/KOSDAQ 이슈 기반 종목 분류 및 테마 분석 웹 서비스 개발
 
 ```text
 issue-flow-scanner/
