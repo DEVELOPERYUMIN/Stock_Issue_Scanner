@@ -1,7 +1,6 @@
-# Stock_Issue_Scanner
 > 2026.02~ |
 
-# 📌 프로젝트명: (가칭) IssueFlow Scanner
+# 📌 프로젝트명 IssueFlow Scanner
 > 코스피/코스닥 대상 “이슈(뉴스) + 수급(거래량)” 기반 주식 검색기  
 > 기준일을 입력하면 테마→종목 단위로 스캔하고 그룹 A/B로 분류합니다.
 
