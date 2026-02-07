@@ -1,10 +1,9 @@
 ## 도커로 MySQL 킴 
-
+## docker compose up -d -> 컨테이너,네트워크,볼륨 자동 생성 및 실행함 
 services:
   mysql:
     image: mysql:8.0
     container_name: sis-mysql
-    restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_DATABASE: stock_issue_scanner
@@ -15,11 +14,9 @@ services:
     # 3306 충돌나서 바꿈 
       - "3307:3306"  # 내 컴퓨터 3307 에서 컨테이너 안의 3306의 mysql 연결 
     volumes: 
-    # volumes ? 컨테이너 안의 mysql 데이터 폴더를 컨테이너 밖의 내 컴터에저장 
+    # volumes ? 컨테이너 안의 mysql 데이터 폴더를 컨테이너 밖에 저장, 컨테이너 삭제해도 데이터 유지된다는 장범  
       - sis_mysql_data:/var/lib/mysql
-    command:
-      - --character-set-server=utf8mb4
-      - --collation-server=utf8mb4_unicode_ci
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
 
 volumes:
   sis_mysql_data:

@@ -1,5 +1,6 @@
- '''
- Python이 파일을 “자동으로 다 읽어주지” 않음 
+
+'''
+Python이 파일을 “자동으로 다 읽어주지” 않음 
 Alembic은 Base.metadata를 보려면,
 모델 클래스가 실제로 import되어 실행되어야 metadata에 등록됨
 
